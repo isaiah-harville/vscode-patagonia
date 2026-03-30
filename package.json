@@ -1,0 +1,56 @@
+{
+  "name": "patagonia",
+  "displayName": "Patagonia Theme",
+  "description": "",
+  "icon": "images/patagonia-icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isaiah-harville/vscode-patagonia.git"
+  },
+  "galleryBanner": {
+    "color": "#373436",
+    "theme": "dark"
+  },
+  "version": "0.1.0",
+  "publisher": "isaiah-harville",
+  "keywords": [
+    "Theme",
+    "Dark Theme",
+    "Light Theme"
+  ],
+  "scripts": {
+    "list": "npx vsce ls",
+    "package": "npx vsce package",
+    "publish": "npx vsce publish"
+  },
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Themes",
+    "Other"
+  ],
+  "contributes": {
+    "configurationDefaults": {
+      "vim.statusBarColorControl": true,
+      "vim.statusBarColors.insert": "#e23bff",
+      "vim.statusBarColors.normal": "#0078d4",
+      "vim.statusBarColors.visual": "#a3b8ef",
+      "vim.statusBarColors.visualline": "#a3b8ef",
+      "vim.statusBarColors.searchinprogressmode": "#3fbf88"
+    },
+    "themes": [
+      {
+        "label": "Patagonia (Dark)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Patagonia-dark.json"
+      },
+      {
+        "label": "Patagonia (Light)",
+        "uiTheme": "vs",
+        "path": "./themes/Patagonia-light.json"
+      }
+    ]
+  }
+}
