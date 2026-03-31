@@ -5,8 +5,17 @@ It combines cool, restrained workbench surfaces with deliberate syntax contrast,
 
 ### Themes Included
 
-- `Patagonia (Dark)`
-- `Patagonia (Light)`
+#### Patagonia (Dark)
+
+![Patagonia Dark](assets/screenshots/patagonia-dark.png)
+
+#### Patagonia (Blue)
+
+![Patagonia Blue](assets/screenshots/patagonia-blue.png)
+
+#### Patagonia (Light)
+
+![Patagonia Light](assets/screenshots/patagonia-light.png)
 
 ### Highlights
 
@@ -41,7 +50,7 @@ Install Patagonia from the Visual Studio Code Marketplace:
 
 1. Open the Command Palette.
 2. Run `Preferences: Color Theme`.
-3. Choose either `Patagonia (Dark)` or `Patagonia (Light)`.
+3. Choose either `Patagonia (Dark)`, `Patagonia (Blue)`, or `Patagonia (Light)`.
 
 ### Vim Integration
 

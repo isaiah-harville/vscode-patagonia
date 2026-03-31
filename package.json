@@ -1,9 +1,9 @@
 {
   "name": "patagonia",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "displayName": "Patagonia Theme",
-  "description": "A VS Code theme pack with Patagonia dark and light variants, tuned for strong code contrast. Pairs well with the Vim extension.",
-  "icon": "images/patagonia-icon.png",
+  "description": "A VSCode theme pack with Patagonia dark and light variants, tuned for strong code contrast. Pairs well with the Vim extension.",
+  "icon": "assets/patagonia-icon.png",
   "license": "MIT",
   "publisher": "isaiah-harville",
   "repository": {
@@ -43,6 +43,11 @@
         "label": "Patagonia (Dark)",
         "uiTheme": "vs-dark",
         "path": "./themes/Patagonia-dark.json"
+      },
+      {
+        "label": "Patagonia (Blue)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Patagonia-blue.json"
       },
       {
         "label": "Patagonia (Light)",
