@@ -1,5 +1,5 @@
 {
-  "name": "Winter Is Coming",
+  "name": "Patagonia",
   "type": "dark",
   "tokenColors": [
     {
@@ -160,7 +160,7 @@
       "name": "JavaScript Other Variable",
       "scope": "variable.other.object.js",
       "settings": {
-        "foreground": "#d6deeb",
+        "foreground": "#d6deeb"
       }
     },
     {
@@ -211,7 +211,7 @@
       "name": "Variable Property Other object property",
       "scope": ["variable.other.object.property"],
       "settings": {
-        "foreground": "#f7ecb5",
+        "foreground": "#f7ecb5"
       }
     },
     {
@@ -265,14 +265,14 @@
         "variable.language.this"
       ],
       "settings": {
-        "foreground": "#00bff9",
+        "foreground": "#00bff9"
       }
     },
     {
       "name": "Keywords operators",
       "scope": ["keyword.operator"],
       "settings": {
-        "foreground": "#00bff9",
+        "foreground": "#00bff9"
       }
     },
     {
@@ -285,7 +285,7 @@
         "storage.type.property.ts"
       ],
       "settings": {
-        "foreground": "#c792ea",
+        "foreground": "#c792ea"
       }
     },
     {
@@ -519,7 +519,7 @@
       "name": "Quotes",
       "scope": "markup.quote",
       "settings": {
-        "foreground": "#78bd65",
+        "foreground": "#78bd65"
       }
     },
     {
@@ -537,6 +537,33 @@
       }
     }
   ],
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "namespace": "#6dbdfa",
+    "class": "#d29ffc",
+    "interface": "#d29ffc",
+    "type": "#d29ffc",
+    "typeParameter": "#a3b8ef",
+    "enum": "#d29ffc",
+    "enumMember": "#f7ecb5",
+    "struct": "#d29ffc",
+    "parameter": "#d7dbe0",
+    "variable": "#d6deeb",
+    "property": "#f7ecb5",
+    "function": "#57cdff",
+    "method": "#57cdff",
+    "macro": "#ff9fcf",
+    "decorator": "#f29fd8",
+    "label": "#80cbc4",
+    "comment": "#c85c5c",
+    "string": "#5f8f49",
+    "number": "#8dec95",
+    "regexp": "#80cbc4",
+    "operator": "#6dbdfa",
+    "keyword": "#82aaff",
+    "modifier": "#82aaff",
+    "builtinVariable": "#92b6f4"
+  },
   "colors": {
     "activityBar.activeBackground": "#011627",
     "activityBar.activeBorder": "#219fd5",
@@ -572,6 +599,18 @@
     "editor.wordHighlightBackground": "#103362",
     "editor.wordHighlightStrongBackground": "#103362",
     "editorBracketMatch.background": "#219fd54d",
+    "editorBracketPairGuide.activeBackground1": "#219fd5",
+    "editorBracketPairGuide.activeBackground2": "#5ABEB0",
+    "editorBracketPairGuide.activeBackground3": "#C792EA",
+    "editorBracketPairGuide.activeBackground4": "#f7ecb5",
+    "editorBracketPairGuide.activeBackground5": "#80cbc4",
+    "editorBracketPairGuide.activeBackground6": "#ff9fcf",
+    "editorBracketPairGuide.background1": "#219fd533",
+    "editorBracketPairGuide.background2": "#5ABEB033",
+    "editorBracketPairGuide.background3": "#C792EA33",
+    "editorBracketPairGuide.background4": "#f7ecb533",
+    "editorBracketPairGuide.background5": "#80cbc433",
+    "editorBracketPairGuide.background6": "#ff9fcf33",
     "editorOverviewRuler.currentContentForeground": "#7e57c2",
     "editorOverviewRuler.incomingContentForeground": "#7e57c2",
     "editorOverviewRuler.commonContentForeground": "#7e57c2",
@@ -594,8 +633,22 @@
     "editorSuggestWidget.selectedBackground": "#5f7e97",
     "editorHoverWidget.border": "#5f7e97",
     "editorIndentGuide.background": "#0e2c45",
+    "editorInlayHint.background": "#0b2942cc",
+    "editorInlayHint.foreground": "#a3b8ef",
+    "editorInlayHint.parameterBackground": "#103362cc",
+    "editorInlayHint.parameterForeground": "#d7dbe0",
+    "editorInlayHint.typeBackground": "#0e2c45cc",
+    "editorInlayHint.typeForeground": "#f7ecb5",
+    "editorRuler.foreground": "#0e2c45",
     "errorForeground": "#EF5350",
+    "gitDecoration.addedResourceForeground": "#5ABEB0",
+    "gitDecoration.deletedResourceForeground": "#ef5350",
+    "gitDecoration.ignoredResourceForeground": "#5f7e97",
     "gitDecoration.modifiedResourceForeground": "#219fd5",
+    "gitDecoration.stageDeletedResourceForeground": "#ef5350",
+    "gitDecoration.stageModifiedResourceForeground": "#219fd5",
+    "gitDecoration.stageUntrackedResourceForeground": "#5ABEB0",
+    "gitDecoration.submoduleResourceForeground": "#C792EA",
     "gitDecoration.untrackedResourceForeground": "#5ABEB0",
     "input.background": "#0b253a",
     "input.border": "#5f7e97",
@@ -628,6 +681,14 @@
     "panelTitle.activeBorder": "#5f7e97",
     "panelTitle.activeForeground": "#219fd5",
     "panelTitle.inactiveForeground": "#5f7e97",
+    "minimap.findMatchHighlight": "#f7ecb5aa",
+    "minimap.selectionHighlight": "#219fd588",
+    "minimap.errorHighlight": "#ef5350aa",
+    "minimap.warningHighlight": "#ffca28aa",
+    "breadcrumb.foreground": "#7799bb",
+    "breadcrumb.activeSelectionForeground": "#d6deeb",
+    "breadcrumb.focusForeground": "#ffffff",
+    "breadcrumbPicker.background": "#0b2942",
     "peekView.border": "#f7ecb5",
     "peekViewEditor.background": "#011627",
     "peekViewResult.background": "#011627",
@@ -652,11 +713,33 @@
     "sideBarTitle.foreground": "#7799bb",
     "sideBarSectionHeader.foreground": "#7799bb",
     "tab.activeBackground": "#0b2942",
+    "tab.activeBorder": "#219fd5",
     "tab.activeForeground": "#d2dee7",
     "tab.inactiveBackground": "#010e1a",
     "tab.inactiveForeground": "#5f7e97",
     "tab.activeBorderTop": "#219fd5",
+    "tab.hoverBackground": "#103362",
+    "tab.hoverForeground": "#d6deeb",
+    "tab.unfocusedActiveForeground": "#a7dbf7",
+    "tab.unfocusedInactiveForeground": "#5f7e97",
     "terminal.ansiBlack": "#011627",
+    "terminal.ansiBlue": "#219fd5",
+    "terminal.ansiBrightBlack": "#5f7e97",
+    "terminal.ansiBrightBlue": "#82aaff",
+    "terminal.ansiBrightCyan": "#80cbc4",
+    "terminal.ansiBrightGreen": "#8dec95",
+    "terminal.ansiBrightMagenta": "#f29fd8",
+    "terminal.ansiBrightRed": "#ff8a80",
+    "terminal.ansiBrightWhite": "#ffffff",
+    "terminal.ansiBrightYellow": "#f7ecb5",
+    "terminal.ansiCyan": "#5ABEB0",
+    "terminal.ansiGreen": "#5f8f49",
+    "terminal.ansiMagenta": "#C792EA",
+    "terminal.ansiRed": "#ef5350",
+    "terminal.ansiWhite": "#d6deeb",
+    "terminal.ansiYellow": "#ffca28",
+    "terminal.foreground": "#d6deeb",
+    "terminal.background": "#011627",
     "textLink.foreground": "#219fd5",
     "textLink.activeForeground": "#98c8ed",
     "titleBar.activeBackground": "#011627",

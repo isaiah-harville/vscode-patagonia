@@ -1,7 +1,7 @@
 {
   "name": "patagonia",
   "displayName": "Patagonia Theme",
-  "description": "",
+  "description": "A VS Code theme pack with Patagonia dark and light variants, tuned for strong code contrast. Pairs well with the Vim extension.",
   "icon": "images/patagonia-icon.png",
   "license": "MIT",
   "repository": {
@@ -15,9 +15,12 @@
   "version": "0.1.2",
   "publisher": "isaiah-harville",
   "keywords": [
-    "Theme",
-    "Dark Theme",
-    "Light Theme"
+    "theme",
+    "color-theme",
+    "dark-theme",
+    "light-theme",
+    "vim",
+    "patagonia"
   ],
   "scripts": {
     "list": "npx vsce ls",
