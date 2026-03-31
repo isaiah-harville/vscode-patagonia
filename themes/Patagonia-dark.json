@@ -99,7 +99,7 @@
       "name": "String",
       "scope": "string",
       "settings": {
-        "foreground": "#5f8f49"
+        "foreground": "#78a95f"
       }
     },
     {
@@ -107,7 +107,7 @@
       "scope": ["string.quoted", "variable.other.readwrite.js"],
       "settings": {
         "fontStyle": "",
-        "foreground": "#5f8f49"
+        "foreground": "#78a95f"
       }
     },
     {
@@ -128,7 +128,7 @@
       "name": "Constant",
       "scope": "constant",
       "settings": {
-        "foreground": "#A170C6"
+        "foreground": "#F78C6C"
       }
     },
     {
@@ -139,14 +139,14 @@
         "variable.other.constant"
       ],
       "settings": {
-        "foreground": "#92b6f4"
+        "foreground": "#FFB86C"
       }
     },
     {
       "name": "User-defined constant",
       "scope": ["constant.character", "constant.other"],
       "settings": {
-        "foreground": "#82AAFF"
+        "foreground": "#F78C6C"
       }
     },
     {
@@ -211,7 +211,7 @@
       "name": "Variable Property Other object property",
       "scope": ["variable.other.object.property"],
       "settings": {
-        "foreground": "#f7ecb5"
+        "foreground": "#d6deeb"
       }
     },
     {
@@ -224,7 +224,7 @@
         "variable.other.property"
       ],
       "settings": {
-        "foreground": "#7fdbca"
+        "foreground": "#d6deeb"
       }
     },
     {
@@ -334,7 +334,7 @@
       "name": "Function name",
       "scope": "entity.name.function",
       "settings": {
-        "foreground": "#87aff4"
+        "foreground": "#DCDCAA"
       }
     },
     {
@@ -386,7 +386,7 @@
       "scope": "support.function",
       "settings": {
         "fontStyle": "",
-        "foreground": "#f7ecb5"
+        "foreground": "#DCDCAA"
       }
     },
     {
@@ -394,7 +394,7 @@
       "scope": "support.constant",
       "settings": {
         "fontStyle": "",
-        "foreground": "#ec9cd2"
+        "foreground": "#FFB86C"
       }
     },
     {
@@ -545,24 +545,24 @@
     "type": "#d29ffc",
     "typeParameter": "#a3b8ef",
     "enum": "#d29ffc",
-    "enumMember": "#f7ecb5",
+    "enumMember": "#FFB86C",
     "struct": "#d29ffc",
     "parameter": "#d7dbe0",
     "variable": "#d6deeb",
-    "property": "#f7ecb5",
-    "function": "#57cdff",
-    "method": "#57cdff",
-    "macro": "#ff9fcf",
+    "property": "#d6deeb",
+    "function": "#DCDCAA",
+    "method": "#DCDCAA",
+    "macro": "#FFB86C",
     "decorator": "#f29fd8",
     "label": "#80cbc4",
     "comment": "#c85c5c",
-    "string": "#5f8f49",
+    "string": "#78a95f",
     "number": "#8dec95",
     "regexp": "#80cbc4",
     "operator": "#6dbdfa",
     "keyword": "#82aaff",
     "modifier": "#82aaff",
-    "builtinVariable": "#92b6f4"
+    "builtinVariable": "#FFB86C"
   },
   "colors": {
     "activityBar.activeBackground": "#011627",
@@ -633,12 +633,12 @@
     "editorSuggestWidget.selectedBackground": "#5f7e97",
     "editorHoverWidget.border": "#5f7e97",
     "editorIndentGuide.background": "#0e2c45",
-    "editorInlayHint.background": "#0b2942cc",
-    "editorInlayHint.foreground": "#a3b8ef",
-    "editorInlayHint.parameterBackground": "#103362cc",
-    "editorInlayHint.parameterForeground": "#d7dbe0",
-    "editorInlayHint.typeBackground": "#0e2c45cc",
-    "editorInlayHint.typeForeground": "#f7ecb5",
+    "editorInlayHint.background": "#0b294266",
+    "editorInlayHint.foreground": "#7c8c98",
+    "editorInlayHint.parameterBackground": "#10336266",
+    "editorInlayHint.parameterForeground": "#9aa7b3",
+    "editorInlayHint.typeBackground": "#10336244",
+    "editorInlayHint.typeForeground": "#8b97a3",
     "editorRuler.foreground": "#0e2c45",
     "errorForeground": "#EF5350",
     "gitDecoration.addedResourceForeground": "#5ABEB0",
