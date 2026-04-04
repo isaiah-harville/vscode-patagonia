@@ -605,6 +605,8 @@
     "editorInlayHint.parameterForeground": "#7b7a72",
     "editorInlayHint.typeBackground": "#EEF1F4",
     "editorInlayHint.typeForeground": "#8f8a80",
+    "editorUnnecessaryCode.opacity": "#00000090",
+    "editorUnnecessaryCode.border": "#5f7e9733",
     "editorRuler.foreground": "#e3e3e3",
     "errorForeground": "#EF5350",
     "gitDecoration.addedResourceForeground": "#189b2c",
