@@ -219,7 +219,13 @@
     },
     {
       "name": "Storage",
-      "scope": ["storage", "meta.var.expr"],
+      "scope": [
+        "storage",
+        "meta.var.expr",
+        "meta.class meta.method.declaration meta.var.expr storage.type.js",
+        "storage.type.property.js",
+        "storage.type.property.ts"
+      ],
       "settings": {
         "foreground": "#c792ea"
       }
