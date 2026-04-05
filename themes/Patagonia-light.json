@@ -89,7 +89,7 @@
     },
     {
       "name": "String Quoted",
-      "scope": ["string.quoted", "variable.other.readwrite.js"],
+      "scope": "string.quoted",
       "settings": {
         "fontStyle": "",
         "foreground": "#a44185"
@@ -138,54 +138,6 @@
       }
     },
     {
-      "name": "JavaScript Other Variable",
-      "scope": "variable.other.object.js",
-      "settings": {
-        "foreground": "#828282"
-      }
-    },
-    {
-      "name": "TypeScript[React] Variables and Object Properties",
-      "scope": [
-        "variable.other.readwrite.alias.ts",
-        "variable.other.readwrite.alias.tsx",
-        "variable.other.readwrite.ts",
-        "variable.other.readwrite.tsx",
-        "variable.other.object.ts",
-        "variable.other.object.tsx",
-        "variable.object.property.ts",
-        "variable.object.property.tsx",
-        "variable.other.ts",
-        "variable.other.tsx",
-        "variable.tsx",
-        "variable.ts"
-      ],
-      "settings": {
-        "foreground": "#828282"
-      }
-    },
-    {
-      "name": "TypeScript Classes",
-      "scope": "meta.class entity.name.type.class.tsx",
-      "settings": {
-        "foreground": "#7c2cbd"
-      }
-    },
-    {
-      "name": "TypeScript Entity Name Type",
-      "scope": ["entity.name.type.tsx", "entity.name.type.module.tsx"],
-      "settings": {
-        "foreground": "#7c2cbd"
-      }
-    },
-    {
-      "name": "TypeScript Method Declaration e.g. `constructor`",
-      "scope": ["meta.method.declaration storage.type.ts", "meta.method.declaration storage.type.tsx"],
-      "settings": {
-        "foreground": "#4a668f"
-      }
-    },
-    {
       "name": "Variable Property Other object property",
       "scope": ["variable.other.object.property"],
       "settings": {
@@ -201,13 +153,6 @@
         "variable.other.readwrite.instance",
         "variable.other.property"
       ],
-      "settings": {
-        "foreground": "#828282"
-      }
-    },
-    {
-      "name": "JavaScript Variable Other ReadWrite",
-      "scope": ["variable.other.readwrite.js", "variable.parameter"],
       "settings": {
         "foreground": "#828282"
       }
@@ -252,25 +197,10 @@
       "name": "Storage",
       "scope": [
         "storage",
-        "meta.var.expr",
-        "meta.class meta.method.declaration meta.var.expr storage.type.js",
-        "storage.type.property.js",
-        "storage.type.property.ts"
+        "meta.var.expr"
       ],
       "settings": {
         "foreground": "#c792ea"
-      }
-    },
-    {
-      "name": "JavaScript module imports and exports",
-      "scope": [
-        "variable.other.meta.import.js",
-        "meta.import.js variable.other",
-        "variable.other.meta.export.js",
-        "meta.export.js variable.other"
-      ],
-      "settings": {
-        "foreground": "#296d31"
       }
     },
     {
@@ -314,7 +244,7 @@
       "name": "Function argument",
       "scope": "variable.parameter",
       "settings": {
-        "foreground": "#b1108e",
+        "foreground": "#8f8a80",
         "fontStyle": ""
       }
     },
@@ -514,8 +444,11 @@
     "enum": "#7c2cbd",
     "enumMember": "#C65D2E",
     "struct": "#7c2cbd",
-    "parameter": "#4a668f",
+    "parameter": "#8f8a80",
+    "parameter.declaration": "#8f8a80",
+    "parameter.unused": "#35506f",
     "variable": "#828282",
+    "variable.unused": "#5f5f5f",
     "property": "#828282",
     "function": "#795E26",
     "method": "#795E26",
