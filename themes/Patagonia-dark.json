@@ -104,7 +104,7 @@
     },
     {
       "name": "String Quoted",
-      "scope": ["string.quoted", "variable.other.readwrite.js"],
+      "scope": "string.quoted",
       "settings": {
         "fontStyle": "",
         "foreground": "#78a95f"
@@ -157,57 +157,6 @@
       }
     },
     {
-      "name": "JavaScript Other Variable",
-      "scope": "variable.other.object.js",
-      "settings": {
-        "foreground": "#d6deeb"
-      }
-    },
-    {
-      "name": "TypeScript[React] Variables and Object Properties",
-      "scope": [
-        "variable.other.readwrite.alias.ts",
-        "variable.other.readwrite.alias.tsx",
-        "variable.other.readwrite.ts",
-        "variable.other.readwrite.tsx",
-        "variable.other.object.ts",
-        "variable.other.object.tsx",
-        "variable.object.property.ts",
-        "variable.object.property.tsx",
-        "variable.other.ts",
-        "variable.other.tsx",
-        "variable.tsx",
-        "variable.ts"
-      ],
-      "settings": {
-        "foreground": "#d6deeb"
-      }
-    },
-    {
-      "name": "TypeScript Classes",
-      "scope": "meta.class entity.name.type.class.tsx",
-      "settings": {
-        "foreground": "#d29ffcff"
-      }
-    },
-    {
-      "name": "TypeScript Entity Name Type",
-      "scope": ["entity.name.type.tsx", "entity.name.type.module.tsx"],
-      "settings": {
-        "foreground": "#d29ffcff"
-      }
-    },
-    {
-      "name": "TypeScript Method Declaration e.g. `constructor`",
-      "scope": [
-        "meta.method.declaration storage.type.ts",
-        "meta.method.declaration storage.type.tsx"
-      ],
-      "settings": {
-        "foreground": "#bcc4cc"
-      }
-    },
-    {
       "name": "Variable Property Other object property",
       "scope": ["variable.other.object.property"],
       "settings": {
@@ -225,13 +174,6 @@
       ],
       "settings": {
         "foreground": "#d6deeb"
-      }
-    },
-    {
-      "name": "JavaScript Variable Other ReadWrite",
-      "scope": ["variable.other.readwrite.js"],
-      "settings": {
-        "foreground": "#d7dbe0"
       }
     },
     {
@@ -279,25 +221,10 @@
       "name": "Storage",
       "scope": [
         "storage",
-        "meta.var.expr",
-        "meta.class meta.method.declaration meta.var.expr storage.type.js",
-        "storage.type.property.js",
-        "storage.type.property.ts"
+        "meta.var.expr"
       ],
       "settings": {
         "foreground": "#c792ea"
-      }
-    },
-    {
-      "name": "JavaScript module imports and exports",
-      "scope": [
-        "variable.other.meta.import.js",
-        "meta.import.js variable.other",
-        "variable.other.meta.export.js",
-        "meta.export.js variable.other"
-      ],
-      "settings": {
-        "foreground": "#d3eed6"
       }
     },
     {
@@ -339,15 +266,7 @@
     },
     {
       "name": "Function argument",
-      "scope": [
-        "variable.parameter",
-        "variable.parameter.function.language.python",
-        "variable.parameter.function.language.special.self.python",
-        "variable.parameter.function.language.special.cls.python",
-        "meta.function.parameters.python variable.parameter",
-        "meta.function.parameters.python variable.parameter.python",
-        "meta.function.parameters.python variable.other.readwrite"
-      ],
+      "scope": "variable.parameter",
       "settings": {
         "foreground": "#8b97a3",
         "fontStyle": ""
@@ -557,10 +476,6 @@
     "struct": "#d29ffc",
     "parameter": "#8b97a3",
     "parameter.declaration": "#8b97a3",
-    "parameter:python": "#8b97a3",
-    "parameter.declaration:python": "#8b97a3",
-    "selfParameter:python": "#8b97a3",
-    "clsParameter:python": "#8b97a3",
     "parameter.unused": "#8e98a4",
     "variable": "#d6deeb",
     "variable.unused": "#8e98a4",
