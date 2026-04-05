@@ -207,7 +207,7 @@
     },
     {
       "name": "JavaScript Variable Other ReadWrite",
-      "scope": ["variable.other.readwrite.js", "variable.parameter"],
+      "scope": ["variable.other.readwrite.js"],
       "settings": {
         "foreground": "#828282"
       }
@@ -312,9 +312,17 @@
     },
     {
       "name": "Function argument",
-      "scope": "variable.parameter",
+      "scope": [
+        "variable.parameter",
+        "variable.parameter.function.language.python",
+        "variable.parameter.function.language.special.self.python",
+        "variable.parameter.function.language.special.cls.python",
+        "meta.function.parameters.python variable.parameter",
+        "meta.function.parameters.python variable.parameter.python",
+        "meta.function.parameters.python variable.other.readwrite"
+      ],
       "settings": {
-        "foreground": "#b1108e",
+        "foreground": "#8f8a80",
         "fontStyle": ""
       }
     },
@@ -514,7 +522,12 @@
     "enum": "#7c2cbd",
     "enumMember": "#C65D2E",
     "struct": "#7c2cbd",
-    "parameter": "#4a668f",
+    "parameter": "#8f8a80",
+    "parameter.declaration": "#8f8a80",
+    "parameter:python": "#8f8a80",
+    "parameter.declaration:python": "#8f8a80",
+    "selfParameter:python": "#8f8a80",
+    "clsParameter:python": "#8f8a80",
     "parameter.unused": "#35506f",
     "variable": "#828282",
     "variable.unused": "#5f5f5f",
@@ -605,8 +618,6 @@
     "editorInlayHint.parameterForeground": "#7b7a72",
     "editorInlayHint.typeBackground": "#EEF1F4",
     "editorInlayHint.typeForeground": "#8f8a80",
-    "editorUnnecessaryCode.opacity": "#00000090",
-    "editorUnnecessaryCode.border": "#5f7e9733",
     "editorRuler.foreground": "#e3e3e3",
     "errorForeground": "#EF5350",
     "gitDecoration.addedResourceForeground": "#189b2c",
