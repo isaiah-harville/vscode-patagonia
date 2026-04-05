@@ -219,10 +219,7 @@
     },
     {
       "name": "Storage",
-      "scope": [
-        "storage",
-        "meta.var.expr"
-      ],
+      "scope": ["storage", "meta.var.expr"],
       "settings": {
         "foreground": "#c792ea"
       }
