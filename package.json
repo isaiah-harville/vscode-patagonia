@@ -1,6 +1,6 @@
 {
   "name": "patagonia",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "displayName": "Patagonia Theme",
   "description": "A VSCode theme pack with Patagonia dark and light variants, tuned for strong code contrast. Pairs well with the Vim extension.",
   "icon": "assets/patagonia-icon.png",
