@@ -1,9 +1,14 @@
-name: Publish
+name: Publish Release
 
 on:
-  release:
-    types:
-      - published
+  push:
+    branches:
+      - main
+    paths:
+      - package.json
+
+permissions:
+  contents: write
 
 jobs:
   publish:
@@ -11,11 +16,50 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node and install dependencies
         uses: ./.github/actions/setup
 
+      - name: Read current version
+        id: current_version
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Read previous version
+        id: previous_version
+        run: |
+          if git rev-parse HEAD^ >/dev/null 2>&1; then
+            VERSION=$(git show HEAD^:package.json | node -p "JSON.parse(require('fs').readFileSync(0, 'utf8')).version")
+            echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          else
+            echo "version=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Stop when version did not change
+        if: steps.current_version.outputs.version == steps.previous_version.outputs.version
+        run: |
+          echo "package.json version is unchanged at ${{ steps.current_version.outputs.version }}."
+          echo "Skipping publish."
+
+      - name: Package extension
+        if: steps.current_version.outputs.version != steps.previous_version.outputs.version
+        run: npx vsce package --out "patagonia-${{ steps.current_version.outputs.version }}.vsix"
+
       - name: Publish extension
+        if: steps.current_version.outputs.version != steps.previous_version.outputs.version
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: npm run publish -- -p "$VSCE_PAT"
+        run: npx vsce publish --pat "$VSCE_PAT"
+
+      - name: Create GitHub release
+        if: steps.current_version.outputs.version != steps.previous_version.outputs.version
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.current_version.outputs.version }}
+          name: v${{ steps.current_version.outputs.version }}
+          generate_release_notes: true
+          make_latest: true
+          files: patagonia-${{ steps.current_version.outputs.version }}.vsix
